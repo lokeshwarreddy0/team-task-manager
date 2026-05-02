@@ -19,7 +19,7 @@ app.use('/api/users', require('./routes/users'));
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(p.join(__dirname, 'build')));
   app.get('*', (req, res) => {
-    res.sendFile(p.join(__dirname, '../frontend/build/index.html'));
+    res.sendFile(p.join(__dirname, 'build/index.html'));
   });
 }
 

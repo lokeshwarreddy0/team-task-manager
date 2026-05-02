@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || '/api',
+  baseURL: "https://team-task-manager-production-4bcc.up.railway.app"
 });
 
 // Attach token from localStorage on every request

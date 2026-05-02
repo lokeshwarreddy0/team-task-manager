@@ -41,3 +41,10 @@ mongoose
   .catch((err) => {
     console.error("DB connection error:", err);
   });
+app.get("/", (req, res) => {
+  res.send("Backend is LIVE 🚀");
+});
+
+app.get("/api/test", (req, res) => {
+  res.send("API working 🚀");
+});
